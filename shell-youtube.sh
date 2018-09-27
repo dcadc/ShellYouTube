@@ -153,7 +153,7 @@ main(){
     fi
     m4aFilename="$(getDownloadTitle "${m4aDownloadLink}").m4a"
     
-    aria2c -x16 -s16 -k 1M "${m4aDownloadLink}" -d "${DOWNLOADPATH}" -o "${m4aFilename}"
+    aria2c -x16 -s16 -k 1M -c "${m4aDownloadLink}" -d "${DOWNLOADPATH}" -o "${m4aFilename}"
     exit 0
 }
 
